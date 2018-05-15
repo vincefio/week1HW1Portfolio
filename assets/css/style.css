@@ -1,0 +1,69 @@
+body{
+  background-image: url("../images/gun_metal.png");
+
+}
+
+#logo{
+  height: 55px;
+  float: left;
+  margin: 7px;
+  background-color: #55d6aa;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: black;
+  border-bottom: 2px solid #55d6aa;
+}
+
+header::after{
+  display: block;
+  content: "";
+  clear: both;
+
+}
+
+#logoText{
+  color: white;
+  line-height: 55px;
+  font-family: 'Bitter', serif;
+  font-size: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 75px;
+  font-family: 'Bitter', serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:visited{
+  color: white;
+}
+
+nav a:active{
+  color: purple;
+}
+
+p, h2{
+  color: white;
+}
