@@ -68,7 +68,31 @@ p, h2{
   color: white;
 }
 
+.columnWrapper{
+  /*flex-wrap: wrap;*/
+}
+
+#mainColumn{
+  background-color: green;
+  height: 200px;
+  flex-basis: 65%;
+  
+}
+
+#sideColumn{
+  background-color: yellow;
+  height: 100px;
+  flex-basis: 26%;
+}
+
 /*MEDIA QUERIES*/
+@media screen and (min-width: 700px){
+  .columnWrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 500px){
   #logo{
     position: relative;
@@ -81,7 +105,9 @@ p, h2{
 
   #navbar{
     clear: both;
-
+    position: relative;
+    right: 18%;
   }
+
 
 }
