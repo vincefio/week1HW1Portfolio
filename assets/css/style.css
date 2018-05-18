@@ -1,6 +1,17 @@
+html{
+
+}
+
 body{
   background-image: url("../images/gun_metal.png");
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+#bodyWrap{
+  flex: 1;
+  padding-bottom: 16px;
 }
 
 #logo{
@@ -8,6 +19,18 @@ body{
   float: left;
   margin: 7px;
   background-color: #55d6aa;
+}
+
+footer{
+  height: 55px;
+  background-color: black;
+  display: flex;
+  border-top: 2px solid #55d6aa;
+}
+
+footer p{
+  color: #55d6aa;
+  margin: auto;
 }
 
 .container{
@@ -36,9 +59,17 @@ header::after{
   padding-right: 15px;
 }
 
+p{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 nav{
   float: right;
 }
+
+/*#navWrapper{
+  display: flex;
+}*/
 
 nav ul{
   list-style: none;
@@ -68,21 +99,55 @@ p, h2{
   color: white;
 }
 
+h1, h2{
+  font-family: 'Bitter', serif;
+  color: black;
+}
+
 .columnWrapper{
   /*flex-wrap: wrap;*/
+  padding-top: 35px;
+  padding-bottom: 16px;
 }
 
 #mainColumn{
-  background-color: green;
-  height: 200px;
+  background-color: #ccff33;
   flex-basis: 65%;
-  
+
 }
 
+
+/*CONNECT WITH ME SIDEBAR*/
 #sideColumn{
-  background-color: yellow;
-  height: 100px;
+  background-color: #ccff33;
+  height: 120px;
   flex-basis: 26%;
+
+}
+
+.hr{
+  width: 80%;
+}
+
+.connectImage{
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+#iconWrapper{
+  display: flex;
+}
+
+#iconWrapper a{
+  margin: 0 auto;
+}
+
+.columnHeader{
+  font-size: 1.2em;
+  padding: 6px;
+  text-align: center;
+
 }
 
 /*MEDIA QUERIES*/
